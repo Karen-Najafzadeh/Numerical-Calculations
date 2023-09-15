@@ -1,0 +1,25 @@
+<mxfile host="Electron" modified="2023-09-15T12:43:54.954Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="HUTpt7sUkUUphBuCvrbp" version="21.7.5" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1434" dy="841" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="tXIKSP-ftMXlppaKsba--4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="tXIKSP-ftMXlppaKsba--0" target="tXIKSP-ftMXlppaKsba--1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tXIKSP-ftMXlppaKsba--0" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="47" y="118" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tXIKSP-ftMXlppaKsba--3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="tXIKSP-ftMXlppaKsba--1" target="tXIKSP-ftMXlppaKsba--2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tXIKSP-ftMXlppaKsba--1" value="taking inputs:&lt;br&gt;a&lt;br&gt;b&lt;br&gt;dx&lt;br&gt;f(x)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="117" width="187" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="tXIKSP-ftMXlppaKsba--2" value="&lt;p&gt;middle = (a+b)/2&lt;br&gt;counter = 0&lt;/p&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="630.5" y="127.5" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
