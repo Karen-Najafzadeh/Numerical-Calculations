@@ -4,8 +4,7 @@ import sympy as sp
 #taking input
 Range = int(input('how many numbers you want to enter?\n'))
 x_list = [float(input(f"enter x number {i+1} : ")) for i in range(Range)]
-print(x_list)
-f = [float(input(f"enter x number {i+1} : ")) for i in range(Range)]
+f = [float(input(f"enter f({x_list[i]}) : ")) for i in range(Range)]
 
 first_list = f
 second_list = []
