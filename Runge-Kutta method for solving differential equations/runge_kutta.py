@@ -1,15 +1,16 @@
-#inputs
+# taking inputs
 x0 = float(input("what is the initial value of x? \n"))
 y0 = float(input("what is the initial value of y? \n"))
-h = float(input("what is the value of h? \n"))
+h = float(input("how accurate? (less number = more accuracy)\n"))
 x = float(input("what x you want to calculate? \ny(x=?)"))
 
-#definitions
+# definitions
+# the mathematical function
 def f(x,y):
     return (x+y)
 step = int((x-x0)/h)
 
-# for the begining(n=0) yn = y0
+# 2nd order Runge-Kutta method 
 def R_K2(x0, yn, step, h):
     for n in range(step):
         k1 = h*f(x0+(n*h),yn)
@@ -19,6 +20,7 @@ def R_K2(x0, yn, step, h):
         yn = ym
     return ym
 
+# 4th order Runge-Kutta method
 def R_K4(x0, yn, step, h):
     for n in range(step):
         k1 = h*f(x0+(n*h),yn)
@@ -30,5 +32,7 @@ def R_K4(x0, yn, step, h):
         yn = ym
     return ym
 
-print(R_K2(x0, y0, step, h))
-print(R_K4(x0, y0, step, h))
+# results 
+print("the answers of this differential equation are:")
+print(f"using 2nd order Runge-Kutta method: {R_K2(x0, y0, step, h)}")
+print(f"using 4th order Runge-Kutta method: {R_K4(x0, y0, step, h)}")

@@ -1,4 +1,4 @@
-#  inputs
+# taking inputs
 x0 = float(input("what is the initial value of x?\n"))
 y0 = float(input("what is the initial value of y?\n"))
 p0 = float(input("what is the initial value of p?\n"))
@@ -6,16 +6,16 @@ h  = float(input("what is h?\n"))
 x  = float(input("what x you want to calculate? \ny(x=?) and p(x=?)\n"))
 
 
-#definitions
+# defining the differential equations
 def f1(x,y,p):
     return p
 
 def f2(x,y,p):
-    return x*p-((x**2)*y)+x#-y+0.1*(1-y**2)*p
+    return -y+0.1*(1-y**2)*p
 
 step = int((x-x0)/h)
 
-
+# using Runge-Kutta algorithm:
 def R_K4(x0, yn, pn, step, h):
 
     def xn(n):
@@ -28,6 +28,7 @@ def R_K4(x0, yn, pn, step, h):
         return p0+(n*h)
 
     for n in range(step):
+        print(n,step,x0,y0,p0,h,x)
         k1 = h*f1(xn(n),yn(n),pn(n))
         l1 = h*f2(xn(n),yn(n),pn(n))
 
@@ -46,6 +47,6 @@ def R_K4(x0, yn, pn, step, h):
 
         yn=ym
         pn=pm
-    print(f"yn={yn}, pn={pn},")
+    return(f"yn={yn}, pn={pn},")
 
-R_K4(x0,y0,p0,step,h)
+print(f"the results for the given equations are: {R_K4(x0,y0,p0,step,h)}")

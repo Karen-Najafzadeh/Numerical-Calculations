@@ -4,7 +4,7 @@ import math as math
 # taking inputs
 a = float(input('what is the beginning of the range?\n'))
 b = float(input('what is the end of the range?\n'))
-h = float(input('how accurate? (less number = more accuracy)'))
+h = float(input('how accurate? (less number = more accuracy)\n'))
 
 # defenitions
 def f(x):
