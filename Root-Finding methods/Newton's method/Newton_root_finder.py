@@ -3,7 +3,7 @@ import sympy as sp
 
 #definitions
 x = sp.symbols("x")
-precision = float(input("how accurate?\n"))
+precision = float(input("how accurate (smaller number = more accurate)?\n"))
 x_i = float(input("give me a random x\n"))
 
 def f(x):

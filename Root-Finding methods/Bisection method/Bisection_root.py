@@ -1,13 +1,12 @@
-# definig the mathematical function here
-def f(x):
-    return (x**2)+x-1  # for example
-
 # getting inputs
 
 a = float(input("Where is the beggining of the range? \n"))
 b = float(input("Where is the end of the range? \n"))
 dx = float(input("ٌHow much accuracy is needed? (smaller number = more accurate)\n"))
 
+# definig the mathematical function here
+def f(x):
+    return (x**2)+x-1  # for example
 # algorithm
 
 while(True):
