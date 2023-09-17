@@ -6,6 +6,7 @@ x = float(input("what x you want to calculate? \ny(x=?)"))
 
 # definitions
 # the mathematical function
+# here is a simple function for example
 def f(x,y):
     return (x+y)
 step = int((x-x0)/h)
