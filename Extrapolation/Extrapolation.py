@@ -3,8 +3,6 @@ Range = int(input('how many numbers you want to enter?\n'))
 x_axis = [float(input(f"enter x number {i+1} : ")) for i in range(Range)]
 print(f"now it's time for f(x)s \n")
 y_axis = [float(input(f"enter f({x_axis[i]}) : ")) for i in range(Range)]
-
-print(x_axis)
 x = float(input("give me x so i'll give you the f(x)!\n"))
 
 if x > max(x_axis):
