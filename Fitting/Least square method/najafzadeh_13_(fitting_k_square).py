@@ -25,9 +25,9 @@ except:
 
 # taking input from user
 n = int(input("how many numbers you have?\n"))
-x = [float(input(f"what is the x No.{i+1}?\n")) for i in range(n)]  # for example =  [1,3,4,6,8,9,11,14]
-print("\n now turn for y\n")
-y = [float(input(f"what is the y No.{i+1}?\n")) for i in range(n)]  # for example = [1,2,4,4,5,7,8,9] 
+x = [float(input(f"what is the x Nunmer{i+1}?\n")) for i in range(n)]  # for example =  [1,3,4,6,8,9,11,14]
+print("\n now enter f(x) \n")
+y = [float(input(f"what is f({x[i]})?\n")) for i in range(n)]  # for example = [1,2,4,4,5,7,8,9] 
 
 # nececery definitions
 x2 = [x[i]**2 for i in range(n)]
