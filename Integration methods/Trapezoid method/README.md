@@ -15,6 +15,6 @@ $$\int_{a}^{b}{f(x)}=\ \frac{h}{2}(f(x_0)+f(x_1))+\frac{h}{2}(f(x_1)+f(x_2))+\ \
 
 As you can see except the first and the last base( $f(x_0) , f(x_n)$ ), we have two of each $f(x)$ so it's better to calculate the sum of these bases in one **for loop** and then the other two bases and finally sum them up to obtain the final answer.
 
-![trapezoid integration method flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/df03c1cc-ef2c-4e29-8116-5046c9b11841)
+![trapezoid integration method flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/43040ca8-242d-46fa-b122-419dc3f40408)
 
 This method is much more accurate than the rectangular method. Test the program and compare the answer with an online integral calculator and see how accurate it is.
