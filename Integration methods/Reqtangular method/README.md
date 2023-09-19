@@ -22,6 +22,9 @@ Now we have n reqtangles ($n =\frac{b-a}{h}$) with the lengh of $f(x)$ and the w
 $$\int_{a}^{b}{f(x)}\ =\ \sum_{i\ =\ 1}^{n}{f(x_i)h}$$
 where $x_i = a+(ih)$. As simple as that
 we start the sumation from 1 to n because the top right tip of the first reqtangle is in $x = a+1h$ which by the defenition means $x_1$ so we start with $i=1$
+![right reqtangular integration flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/ed6f97d2-719d-414c-8146-5d5ddb89a73d)
+
+
 # 2 Left Reqtangle Integration method
 We do just the same we did in the previous method but in this one, we chop the area into same width ($h$) reqtangles So that the top **Left** tip of every reqtangle touches $f(x)$ curve Just like the picture below:
 
@@ -29,6 +32,7 @@ We do just the same we did in the previous method but in this one, we chop the a
 
 But this time we start the iterations from $i=0$ upto $n-1$
 $$\int_{a}^{b}{f(x)}\ =\ \sum_{i\ =\ 0}^{n-1}{f(x_i)h}$$
+![reqtangular integration flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/13ea7ec3-3aef-49eb-be3a-99a165f93f70)
 
 # 3 Middle reqtangle Integration method
 
@@ -41,3 +45,6 @@ $$middle\ =\ \frac{x_i+x_{(i+1)}}{2}$$
 
 Thus: 
 $$\int_{a}^{b}{f(x)}=\sum_{i=0}^{n-1}{f\left(\frac{x_i+x_{(i+1)}}{2}\right)h\ }$$
+
+![middle reqtangular integration flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/fb517385-27a3-411a-96c8-3329698448e2)
+
