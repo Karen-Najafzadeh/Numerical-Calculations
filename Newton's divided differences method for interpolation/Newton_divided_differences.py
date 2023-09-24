@@ -6,23 +6,32 @@ Range = int(input('how many numbers you want to enter?\n'))
 x_list = [float(input(f"enter x number {i+1} : ")) for i in range(Range)]
 f = [float(input(f"enter f({x_list[i]}) : ")) for i in range(Range)]
 
-first_list = f
-second_list = []
+left_column = f
+right_column = []
 Coefficient = []
 
 # trying to find the Coefficients of differences
-for i in range(1,len(x_list)+1):
-    for j in range(len(f)-i):
-        second_list.append((first_list[j+1]-first_list[j])/(x_list[j+i]-x_list[j]))
-    try:
-        Coefficient.append(second_list[0])
-        first_list = second_list
-        second_list = []
-    except:
-        break
+for i in range(1,len(x_list)):
+    for j in range(0,len(left_column)-1):
+        print(i,j)
+        right_column.append((left_column[j+1]-left_column[j])/(x_list[j+i]-x_list[j]))
+    
+    Coefficient.append(right_column[0])
+    left_column = right_column
+    right_column = []
 
-print(f'\nfor this example, Coefficients are {Coefficient}\n')
+print(f'\nfor this set of data, divided difference Coefficients are {Coefficient}\n')
 
-x = sp.symbols("x")
-p = f[0]+(x-x_list[0])*Coefficient[0]+((x-x_list[0])*(x-x_list[1])*Coefficient[1])+((x-x_list[0])*(x-x_list[1])*(x-x_list[2])*Coefficient[2])
-print(f"\np = {p}")
+
+# making P(X) and asking user to enter x to calculate P(x)
+def P(x_list = x_list, Coefficient = Coefficient, x = sp.symbols("x")):
+    m = x-x_list[0]
+    sum = f[0]+m*Coefficient[0]
+    for i in range(1, len(Coefficient)):
+        m *= (x-x_list[i])
+        sum += m*Coefficient[i]
+    print(f"\nP(x) = {sum}")
+    x_i = float(input(f"give me x so i'll give you f(x):\n"))
+    print(sum.subs(x,x_i))
+
+P()
