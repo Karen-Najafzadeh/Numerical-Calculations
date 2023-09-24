@@ -55,3 +55,8 @@ $$ P(x)\ =x^2 $$
 I came up with this idea that we can consider $f(x)$ column as a variable named **left_column** and the first divided difference as an empty list called **right_column**. Then we can calculate the values for this column and append them in the **right_column** list. When we're done with all the calculations for the first divided difference, we append right_column[0] to a list defined to store the divided differences coefficients called **Coefficient**. Then we change the columns, (left_column = right_column and right_column = [] ) and we start to do the same for second divided difference and third and ...
 
 ![divided difference](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/be29a894-8cc2-4816-b692-5c09f34962b7)
+
+# Interpolation function
+When we are done with finding the coefficients (divided differences), this function will create the $P(x)$ and insert a given $x$ by the user and returns the value of the mathematical function at that particular $x$.
+
+![interpolating function](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/be713a05-cc58-4bab-90a0-a58333d15e41)
