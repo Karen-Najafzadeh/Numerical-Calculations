@@ -13,7 +13,6 @@ Coefficient = []
 # trying to find the Coefficients of differences
 for i in range(1,len(x_list)):
     for j in range(0,len(left_column)-1):
-        print(i,j)
         right_column.append((left_column[j+1]-left_column[j])/(x_list[j+i]-x_list[j]))
     
     Coefficient.append(right_column[0])
@@ -24,7 +23,7 @@ print(f'\nfor this set of data, divided difference Coefficients are {Coefficient
 
 
 # making P(X) and asking user to enter x to calculate P(x)
-def P(x_list = x_list, Coefficient = Coefficient, x = sp.symbols("x")):
+def interpolating(x_list = x_list, Coefficient = Coefficient, x = sp.symbols("x")):
     m = x-x_list[0]
     sum = f[0]+m*Coefficient[0]
     for i in range(1, len(Coefficient)):
@@ -34,4 +33,4 @@ def P(x_list = x_list, Coefficient = Coefficient, x = sp.symbols("x")):
     x_i = float(input(f"give me x so i'll give you f(x):\n"))
     print(sum.subs(x,x_i))
 
-P()
+interpolating()
