@@ -15,8 +15,8 @@ Suppose that we have a bunch of data like this:
   
 | i | 0 | 1 | 2 | 3 | ... | n |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| $x_i$ | 0 | 1 | 3 | 5 |... | m |
-| $f(x_i)$ | 1 | -6 | 4 | 12 | ... | $f(m)$ |
+| $x_i$ | 0 | 1 | 3 | 6 |... | m |
+| $f(x_i)$ | 1 | -6 | 4 | 169 | ... | $f(m)$ |
 
 where i is just a counter, an index to help keep tracking of the data. And $x_i$ can be any real number and $f(x_i)$ is the function value at $x_i$.
 
@@ -32,6 +32,18 @@ And so on ...
 
 * The function
 
-Now by using the formula I just introduced, we can obtain a polynomial function ( $P(x)$ ) that fits the data we have.
+Now by using the formula I just introduced, we can obtain a polynomial function ( $P(x)$ ) that fits the data we have. so by having the mathematical function you can accurately predict any desired $f(x)$ 
 
 $$ P(x)\ =\ f(x_0)+(x-x_0)F\left[x_0,x_1\right]+\ (x-x_0)(x-x_1)F\left[x_0,x_1,x_2\right]+\cdots+(x-x_0)(x-x_1)\cdots(x-x_{n-1})F\left[x_0,x_1,x_2,\cdots x_n\right] $$
+
+
+Woho! That's a lot of work, isn't it? But don't worry there is a more simple way to calculate the divided differences. Let me explain with a simple example. Supose we have the given set of data:
+
+| i | 0 | 1 | 2 | 3 | 4 |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| $x_i$ | -2 | -1 | 0 | 1 | 2 |
+| $f(x_i)$ | 4 | 1 | 0 | 1 | 4 |
+
+So the trick here is to rewrite the data in vertical columns just like the following figure and do the math as shown. the first number in each column will be the value of the corresponding divided difference.
+
+
