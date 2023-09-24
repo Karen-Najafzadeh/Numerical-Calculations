@@ -3,11 +3,6 @@
 Interpolation is very useful when you have a bunch of data that you want to make sense out of them. It's useful in many fields specialy in astronomy, physics and many other sciences.<br />
 Here I've written a program which takes **n** numbers (**$x_i$**) and their corresponding $f(x_i)$  and then, by using Newton's divided difference method gives you the best mathematical function that can fit the given data.
 
-# warnings
-* First of all I've witten this program for fun so it's not that perfect, but it's practical.<br />
-* Second, currently this program can't find the function for cases that have under 4 pair of data.(but I'll fix it, having the time)<br />
-* Finally, It only calculates till third diveded difference, but don't worry, because the errorrs are neglectable.(I'll try to fix this too)<br />
-
 # Mathematics
 * What is divided difference?
   
@@ -46,4 +41,17 @@ Woho! That's a lot of work, isn't it? But don't worry there is a more simple way
 
 So the trick here is to rewrite the data in vertical columns just like the following figure and do the math as shown. the first number in each column will be the value of the corresponding divided difference.
 
+![image](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/bdc3ff69-d33a-4f8e-8d79-3f31bfbb7427)
 
+So $P(X)$ is :
+
+$$ P(x)\ =\ 4+(x-(-2))(-3)+\ (x-(-2))(x-(-1))(1)+0+0 $$
+
+$$ P(x)\ =\ 4\ -\ 3x\ -\ 6\ +\ x^2+x\ +2x\ +2 $$
+
+$$ P(x)\ =x^2 $$
+
+# algorithm
+I came up with this idea that we can consider $f(x)$ column as a variable named **left_column** and the first divided difference as an empty list called **right_column**. Then we can calculate the values for this column and append them in the **right_column** list. When we're done with all the calculations for the first divided difference, we append right_column[0] to a list defined to store the divided differences coefficients called **Coefficient**. Then we change the columns, (left_column = right_column and right_column = [] ) and we start to do the same for second divided difference and third and ...
+
+![divided difference](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/be29a894-8cc2-4816-b692-5c09f34962b7)
