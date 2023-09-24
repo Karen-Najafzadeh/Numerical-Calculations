@@ -1,4 +1,4 @@
-# Simpson's $\frac{1}{3}$ rule
+# Simpson's 1/3 rule
 
 suppose that you have a mathematical function called $f(x)$ and an interval (say from $a$ to $b$).
 <br /> Let's divide the intevral into **n** parts (let's call it **iterations**) so that we can define a variable called $h$ where: $h\ =\ \frac{b-a}{n}$
