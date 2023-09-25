@@ -18,3 +18,8 @@ Also $F[x_{k-1},x_k]$ is newton's first divided difference.I've explained about 
 We've got all we need, just take a $x$ to calculate $f(x)$.
 
 ![extrapolation flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/7a362f98-f293-4729-8716-5b5d15a59344)
+
+
+# Another way
+
+There is one another way you can do the same. Use [Newton's divided differences method for interpolation](https://github.com/Karen-Najafzadeh/Numerical-Calculations/tree/main/Newton's%20divided%20differences%20method%20for%20interpolation) and give it a $x$ outside of your data range. In that manner you can use it as another method of extrapolation.
