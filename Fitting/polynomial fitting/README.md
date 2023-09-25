@@ -29,3 +29,17 @@ $$ \sum_{i=1}^{m}{x_i^{n-1}y_i}=\ \sum_{i=1}^{m}{x_i^{n-1}a_0}+\sum_{i=1}^{m}{x_
 $$ \vdots $$
 
 $$ \sum_{i=1}^{m}{x_i^0y_i}=\ \sum_{i=1}^{m}{x_i^0a_0}+\sum_{i=1}^{m}{x_i^1a_1}+\cdots+\sum_{i=1}^{m}{x_i^na_n} $$
+
+Well, I think solving this coulb be used as a punishment for serious crimes 😂. So what we have here is $n$ unknown variables wrapped inside $n+1$ equations. so it's possible to solve and obtain the unknowns which I'm going to explain next.
+
+# algorithm 
+Let's make the work easier by taking $n=2$. And let's try writing the equations in a matrix formation. We name the left side of the above equations (I mean these ones $\sum{x_i^ny_i}$ ) as $r_{i,j}$ (or whatever🤷).
+And about the right side, as you can see $a_n$ coefficients are calcutable, so if we call them $x_{i,j}$ we can write all of those equations in a matrix form like this:
+
+$$ r_{11} = x_{11} a_0 + x_{12} a_1 + x_{13} a_2  $$
+
+$$ r_{21} = x_{21} a_0 + x_{22} a_1 + x_{23} a_2  $$
+
+$$ r_{31} = x_{31} a_0 + x_{32} a_1 + x_{33} a_2  $$
+
+Now Let's make a loop (for n in range(degree+1)) (from now on we call n, degree), and inside it we do two things Simultaneously. First, on another loop inside it, we make a nested loop (for i in range(m)) (where m is the total number of data pair we have) so we can calculate $r_{i,j}$.
