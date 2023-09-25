@@ -43,3 +43,36 @@ $$ r_{21} = x_{21} a_0 + x_{22} a_1 + x_{23} a_2  $$
 $$ r_{31} = x_{31} a_0 + x_{32} a_1 + x_{33} a_2  $$
 
 Now Let's make a loop (for n in range(degree+1)) (from now on we call n, degree), and inside it we do two things Simultaneously. First, on another loop inside it, we make a nested loop (for i in range(m)) (where m is the total number of data pair we have) so we can calculate $r_{i,j}$.
+<br /> On the same level of the m loop, still inside the n loop we make another loop to calculate $x_{i,j}$
+
+After doing all that, we are left with two lists, first the one called **left_side** which contains [ $r_{11}$ , $r_{21}$ , $r_{31}$] and another list called **right_side** which contains the calculated right side of above equations. Now Let's cast those lists to Numpy arrays to make our work easier and faster. 
+<br />So we define R a numpy array as:
+
+$$ R\ = \begin{bmatrix}r_{1,1}\\
+r_{2,1}\\
+r_{3,1}\end{bmatrix} $$
+
+And we create another np array (called **B**) to store the coefficients of $a_n$ in the list **right_side** 
+
+$$ B\ = \begin{bmatrix}x_{1,1}&x_{1,2}&x_{1,3}\\
+x_{2,1}&x_{2,2}&x_{2,3}\\
+x_{3,1}&x_{3,2}&x_{3,3}
+\end{bmatrix} $$
+
+And if:
+
+$$ A\ = \begin{bmatrix}a_{0}\\
+a_{1}\\
+r_{2}\end{bmatrix} $$
+
+Then 
+
+$$R = B.A$$
+
+As the goal is to find $A$ so:
+
+$$A\ =\ B^{-1}R$$
+
+Where $B^{-1}$ is the inverse matrix of $B$. It's Done, we have $a_0$ $a_1$ and $a_2$. Now it's time to form up the actual mathematical function $f(x) = a_n x^n + a_{n-1}x^{n-1} + ... + a_1 x + a_0$ and we are done!
+
+![polynomial fitting flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/bd0ded41-0ea2-4cc9-86b3-23c4c5501cb1)
