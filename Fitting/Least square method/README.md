@@ -36,6 +36,6 @@ $$ K^2=\sum_{i=1}^{m}{(y_i\ -\ ax_i+b)}^2\  $$
 # Code and Libraries used
 I think the algorithm is pretty straightforward as I explained in the mathematics section, we just need to calculate those summations and the rest is simple, as the flowchart shows.<br />
 
-![least square fitting method flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/e81cbf76-c935-45b1-9c0d-fd070933c5c9)
+![least square fitting method flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/17d9ced9-a4b6-4036-9d67-47b0a1f32c2d)
 
 At the end of the code I also tried to plot the function we obtained so i used ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) to do so 
