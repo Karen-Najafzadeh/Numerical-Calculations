@@ -18,4 +18,4 @@ And at the end we add $f(x_0)$ and $f(x_n)$ to the total sum. so that the final 
 
 $$ \int_{a}^{b}{f(x)dx}\ =\ \frac{h}{3}(sum) $$
 
-![simpson integration flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/81351290-a229-4b81-98d3-951b52d579cc)
+![simpson integration flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/e4ea3b23-0b08-41d1-af47-e7c2e93c2504)
