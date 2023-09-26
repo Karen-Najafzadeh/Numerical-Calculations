@@ -17,7 +17,7 @@ Also $F[x_{k-1},x_k]$ is Newton's first divided difference. I've explained about
 
 We've got all we need, just take a $x$ to calculate $f(x)$.
 
-![extrapolation flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/7a362f98-f293-4729-8716-5b5d15a59344)
+![extrapolation flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/e489dfa3-eab7-452e-adc5-be4a1f18b466)
 
 
 # Another way
