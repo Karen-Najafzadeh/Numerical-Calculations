@@ -10,7 +10,7 @@ First of all you need to determine a range in **x axis** so that the program can
 
 # Flowchart
 
-![bisection method flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/eeca2a9a-e59d-4aa9-8242-b5cbf9c28f04)
+![bisection method flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/8f7a94d1-6609-4452-b4da-e4cab55e9e1b)
 
 
 # How does the method works?
