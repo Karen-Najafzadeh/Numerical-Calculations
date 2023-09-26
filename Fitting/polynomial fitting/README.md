@@ -75,4 +75,4 @@ $$A\ =\ B^{-1}R$$
 
 Where $B^{-1}$ is the inverse matrix of $B$. It's Done, we have $a_0$ $a_1$ and $a_2$. Now it's time to form up the actual mathematical function $f(x) = a_n x^n + a_{n-1}x^{n-1} + ... + a_1 x + a_0$ and we are done!
 
-![polynomial fitting flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/d0c37ab8-940f-45e2-8740-310e3fdee066)
+![polynomial fitting flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/7074fa61-0998-417e-97be-3631265fe9f6)
