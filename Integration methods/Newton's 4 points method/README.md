@@ -4,4 +4,4 @@ Well to be honest this method is quiet a little complicated so I'm not going to 
 
 So if we ignore the mathematics, the rest is actually nothing much. just follw the flowchart and you'll be fine.
 
-![newton's integration flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/165c5b81-80ca-424e-bbeb-576f7284e200)
+![newton's integration flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/19c179fe-897e-4202-a721-73f14b4bfc04)
