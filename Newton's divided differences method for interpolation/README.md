@@ -41,7 +41,7 @@ Woho! That's a lot of work, isn't it? But don't worry there is a more simple way
 
 So the trick here is to rewrite the data in vertical columns just like the following figure and do the math as shown. the first number in each column will be the value of the corresponding divided difference.
 
-![image](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/bdc3ff69-d33a-4f8e-8d79-3f31bfbb7427)
+![divided differencecalculations](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/3a9f7d1b-e129-49e2-ae92-d371a18bff23)
 
 So $P(X)$ is :
 
