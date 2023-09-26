@@ -6,6 +6,6 @@ Well this topic a little advanced and complicated so I just ignore the mathemati
 
 $$\int_{a}^{b}{f(x)}=\ \frac{b-a}{2}\left(f\left(\frac{1}{2}\left(\frac{(a-b)\sqrt3}{3}+(a+b)\right)\right)+f\left(\frac{1}{2}\left(\frac{(b-a)\sqrt3}{3}+(a+b)\right)\right)\right)$$
 
-![Gaussian method flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/a9683cb7-5fdb-419d-badc-9e5c6b0dd20c)
+![Gaussian method flowchart](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/aed37ffb-c86b-4c6f-9023-cfce74544f83)
 
 check the code, get your answer and compare with an online integral calculator and see the accuracy
