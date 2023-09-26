@@ -19,7 +19,7 @@ The following expression is defined as newton's first divided difference:
 
 $$ F\left[x_i,x_{i+1}\right]\ =\ \frac{f(x_i)-f(x_{i+1})}{x_i-x_{i+1}} $$
 
-Second divided difference:
+And the second divided difference would be:
 
 $$ F\left[x_i,x_{i+1},x_{i+2}\right]\ =\ \frac{F\left[x_i,x_{i+1}\right]-F\left[x_{i+1},x_{i+2}\right]}{x_i-x_{i+2}} $$
 
@@ -27,7 +27,7 @@ And so on ...
 
 * The function
 
-Now by using the formula I just introduced, we can obtain a polynomial function ( $P(x)$ ) that fits the data we have. so by having the mathematical function you can accurately predict any desired $f(x)$ 
+Now by using the formula I just introduced, we can obtain a polynomial function $P(x)$ that fits the data we have. so by having the mathematical function you can accurately predict any desired $f(x)$ 
 
 $$ P(x)\ =\ f(x_0)+(x-x_0)F\left[x_0,x_1\right]+\ (x-x_0)(x-x_1)F\left[x_0,x_1,x_2\right]+\cdots+(x-x_0)(x-x_1)\cdots(x-x_{n-1})F\left[x_0,x_1,x_2,\cdots x_n\right] $$
 
@@ -51,8 +51,10 @@ $$ P(x)\ =\ 4\ -\ 3x\ -\ 6\ +\ x^2+x\ +2x\ +2 $$
 
 $$ P(x)\ =x^2 $$
 
+Tadaaaaa, Beautiful isn't it?
+
 # algorithm
-I came up with this idea that we can consider $f(x)$ column as a variable named **left_column** and the first divided difference as an empty list called **right_column**. Then we can calculate the values for this column and append them in the **right_column** list. When we're done with all the calculations for the first divided difference, we append right_column[0] to a list defined to store the divided differences coefficients called **Coefficient**. Then we change the columns, (left_column = right_column and right_column = [] ) and we start to do the same for second divided difference and third and ...
+I came up with this idea that we can consider $f(x)$ column as a variable named **left_column** and the first divided difference as an empty list called **right_column**. Then we can calculate the operations showed in the previous figure for each column and append them to its **right_column** list. When we're done with all the calculations for the first divided difference, we append right_column[0] to a list defined to store the divided differences coefficients called **Coefficient**. Then we change the columns, (left_column = right_column and right_column = [] ) and we start to do the same for second divided difference and third and ...
 
 ![divided difference](https://github.com/Karen-Najafzadeh/Numerical-Calculations/assets/106056574/be29a894-8cc2-4816-b692-5c09f34962b7)
 
